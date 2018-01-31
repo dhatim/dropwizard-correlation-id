@@ -5,7 +5,7 @@
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dhatim/dropwizard-correlation-id/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dhatim/dropwizard-correlation-id)
 [![Javadocs](http://www.javadoc.io/badge/org.dhatim/dropwizard-correlation-id.svg)](http://www.javadoc.io/doc/org.dhatim/dropwizard-correlation-id)
 
-Dropwizard integration for correlation ids.
+Correlation ids for Dropwizard applications.
 
 ## Usage
 
