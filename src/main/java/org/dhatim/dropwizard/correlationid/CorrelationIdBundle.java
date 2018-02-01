@@ -17,7 +17,7 @@ public class CorrelationIdBundle<C extends Configuration> implements ConfiguredB
     }
 
     public static <C extends Configuration> CorrelationIdBundle<C> withConfigurationSupplier(Function<C, CorrelationIdConfiguration> configurationSupplier) {
-        return new CorrelationIdBundle(configurationSupplier);
+        return new CorrelationIdBundle<>(configurationSupplier);
     }
 
     public static <C extends Configuration> CorrelationIdBundle<C> getDefault() {
