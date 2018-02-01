@@ -7,7 +7,7 @@
 
 Correlation ids for Dropwizard applications. They are useful to match requests between different components.
 - Correlation ids are sent from one system to another using an http header in requests and responses. The default http header is `X-Correlation-Id`.
-- When the server processes a request, its correlation id (or a random UUID if not available) is put into [slf4j mapped diagnostic context (MDC)](https://www.slf4j.org/manual.html#mdc). The default MDC key is `CorrelationId`.
+- When the server processes a request, its correlation id (or a random UUID if not available) is put into [slf4j mapped diagnostic context (MDC)](https://www.slf4j.org/manual.html#mdc). The default MDC key is `correlationId`.
 - When using a Jersey or Apache http client to send requests to another system, the correlation id currently in the MDC (or a random UUID if not available) is put into the request http header.
 
 ## Usage
@@ -20,7 +20,7 @@ This project is available in the [Central Repository](http://search.maven.org/#s
 <dependency>
   <groupId>org.dhatim</groupId>
   <artifactId>dropwizard-correlation-id</artifactId>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
 </dependency>
 ```
 

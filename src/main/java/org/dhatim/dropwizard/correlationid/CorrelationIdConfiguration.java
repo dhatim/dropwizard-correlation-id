@@ -15,7 +15,7 @@ public class CorrelationIdConfiguration {
     public CorrelationIdConfiguration(@JsonProperty("headerName") String headerName,
             @JsonProperty("mdcKey") String mdcKey) {
         this.headerName = Optional.ofNullable(headerName).orElse("X-Correlation-Id");
-        this.mdcKey = Optional.ofNullable(mdcKey).orElse("CorrelationId");
+        this.mdcKey = Optional.ofNullable(mdcKey).orElse("correlationId");
     }
 
 }
