@@ -30,7 +30,7 @@ The default values are as follows:
 ```yaml
 correlationId:
     headerName: X-Correlation-Id
-    mdcKey: CorrelationId
+    mdcKey: correlationId
 ```
 
 ### Add the bundle to your Dropwizard application
