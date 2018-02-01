@@ -60,9 +60,9 @@ If `configuration` is omitted, default values apply.
 
 ### Usage with an Apache http client
 
-Wrap the `HttpClientBuilder` this way:
+Replace your `HttpClientBuilder` by `CorrelationIdHttpClientBuilder` this way:
 ```java
-HttpClientBuilder builder = CorrelationIdHttpClient.wrap(new HttpClientBuilder(...)..., configuration);
+HttpClientBuilder builder = new CorrelationIdHttpClientBuilder(..., configuration)...;
 CloseableHttpClient cient = builder.build(...);
 ```
 If `configuration` is omitted, default values apply.
