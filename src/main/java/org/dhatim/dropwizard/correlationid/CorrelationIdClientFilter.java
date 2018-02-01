@@ -5,8 +5,10 @@ import java.util.Optional;
 import java.util.UUID;
 import javax.ws.rs.client.ClientRequestContext;
 import javax.ws.rs.client.ClientRequestFilter;
+import javax.ws.rs.ext.Provider;
 import org.slf4j.MDC;
 
+@Provider
 public class CorrelationIdClientFilter implements ClientRequestFilter {
 
     private final CorrelationIdConfiguration configuration;
