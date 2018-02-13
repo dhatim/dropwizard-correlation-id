@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/dhatim/dropwizard-correlation-id.png?branch=master)](https://travis-ci.org/dhatim/dropwizard-correlation-id)
 [![Coverage Status](https://coveralls.io/repos/github/dhatim/dropwizard-correlation-id/badge.svg?branch=master)](https://coveralls.io/github/dhatim/dropwizard-correlation-id?branch=master)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dhatim/dropwizard-correlation-id/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dhatim/dropwizard-correlation-id)
-[![Javadocs](http://www.javadoc.io/badge/org.dhatim/dropwizard-correlation-id.svg)](http://www.javadoc.io/doc/org.dhatim/dropwizard-correlation-id)
+[![Javadocs](https://www.javadoc.io/badge/org.dhatim/dropwizard-correlation-id.svg)](https://www.javadoc.io/doc/org.dhatim/dropwizard-correlation-id)
 
 Correlation ids for Dropwizard applications. They are useful to match requests between different components.
 - Correlation ids are sent from one system to another using an http header in requests and responses. The default http header is `X-Correlation-Id`.
