@@ -1,7 +1,7 @@
 # Dropwizard Correlation Id
 
 [![Build Status](https://github.com/dhatim/dropwizard-correlation-id/workflows/build/badge.svg)](https://github.com/dhatim/dropwizard-correlation-id/actions)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dhatim/dropwizard-jwt-cookie-authentication/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dhatim/dropwizard-correlation)id
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dhatim/dropwizard-jwt-cookie-authentication/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dhatim/dropwizard-correlation-id)
 [![Javadocs](https://www.javadoc.io/badge/org.dhatim/dropwizard-correlation-id.svg)](https://www.javadoc.io/doc/org.dhatim/dropwizard-correlation-id)
 
 Correlation ids for Dropwizard applications. They are useful to match requests between different components.
