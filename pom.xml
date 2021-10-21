@@ -32,6 +32,9 @@
         <developerConnection>scm:git:git@github.com:dhatim/dropwizard-correlation-id.git</developerConnection>
         <url>git@github.com:dhatim/dropwizard-correlation-id.git</url>
     </scm>
+    <properties>
+        <enforcer.fail>false</enforcer.fail>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>io.dropwizard</groupId>
