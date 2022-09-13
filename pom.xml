@@ -38,7 +38,7 @@
         <java.source>1.8</java.source>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <dropwizard.version>2.1.1</dropwizard.version>
+        <dropwizard.version>2.1.2</dropwizard.version>
     </properties>
     <repositories>
         <repository>
