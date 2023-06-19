@@ -2,12 +2,14 @@ package org.dhatim.dropwizard.correlationid;
 
 import com.codahale.metrics.MetricRegistry;
 import io.dropwizard.client.HttpClientBuilder;
-import io.dropwizard.setup.Environment;
+import io.dropwizard.core.setup.Environment;
+import org.apache.hc.core5.http.EntityDetails;
+import org.apache.hc.core5.http.HttpRequest;
+import org.apache.hc.core5.http.protocol.HttpContext;
+import org.slf4j.MDC;
+
 import java.util.Optional;
 import java.util.UUID;
-import org.apache.http.HttpRequest;
-import org.apache.http.protocol.HttpContext;
-import org.slf4j.MDC;
 
 public class CorrelationIdHttpClientBuilder extends HttpClientBuilder {
 
@@ -32,12 +34,11 @@ public class CorrelationIdHttpClientBuilder extends HttpClientBuilder {
     }
 
     @Override
-    protected org.apache.http.impl.client.HttpClientBuilder customizeBuilder(org.apache.http.impl.client.HttpClientBuilder builder) {
-        builder.addInterceptorLast((HttpRequest request, HttpContext context) -> {
+    protected org.apache.hc.client5.http.impl.classic.HttpClientBuilder customizeBuilder(org.apache.hc.client5.http.impl.classic.HttpClientBuilder builder) {
+        builder.addRequestInterceptorLast((HttpRequest request, EntityDetails entity, HttpContext context) -> {
             String correlationId = Optional.ofNullable(MDC.get(configuration.mdcKey)).orElseGet(() -> UUID.randomUUID().toString());
             request.addHeader(configuration.headerName, correlationId);
         });
         return builder;
     }
-
 }

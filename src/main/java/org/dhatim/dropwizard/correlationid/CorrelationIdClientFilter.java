@@ -1,12 +1,13 @@
 package org.dhatim.dropwizard.correlationid;
 
+import jakarta.ws.rs.client.ClientRequestContext;
+import jakarta.ws.rs.client.ClientRequestFilter;
+import jakarta.ws.rs.ext.Provider;
+import org.slf4j.MDC;
+
 import java.io.IOException;
 import java.util.Optional;
 import java.util.UUID;
-import javax.ws.rs.client.ClientRequestContext;
-import javax.ws.rs.client.ClientRequestFilter;
-import javax.ws.rs.ext.Provider;
-import org.slf4j.MDC;
 
 @Provider
 public class CorrelationIdClientFilter implements ClientRequestFilter {
